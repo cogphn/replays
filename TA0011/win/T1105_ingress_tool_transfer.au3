@@ -1,0 +1,6 @@
+Send("#r")
+WinWaitActive("Run")
+Send("cmd.exe{ENTER}")
+WinWaitActive("C:\WINDOWS\system32\cmd.exe")
+Send("mkdir c:\tmp{ENTER}")
+Send("bitsadmin /TRANSFER job1 /DOWNLOAD /PRIORITY normal https://download.sysinternals.com/files/PSTools.zip c:\\tmp\\outfile.zip{ENTER}")
